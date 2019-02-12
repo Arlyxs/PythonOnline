@@ -46,6 +46,7 @@ matrix[0]
 matrix[0][0]=11
 matrix
 
+### List Comprehensions ###
 # Build a list comprehension by deconstructing a for loop within a []
 first_col = [row[0] for row in matrix]
 first_col
