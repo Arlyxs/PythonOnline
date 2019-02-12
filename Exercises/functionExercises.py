@@ -25,18 +25,14 @@ arrayCheck([1,2,3])
 ## -- PROBLEM 2 -- ##
 #####################
 
-# Given a string, return a new string made of every other character starting
-# with the first, so "Hello" yields "Hlo".
-
-# For example:
-
-# stringBits('Hello') → 'Hlo'
-# stringBits('Hi') → 'H'
-# stringBits('Heeololeo') → 'Hello'
+# Given a string, return a new string made of every other character starting  with the first,so "Hello" yields "Hlo".
 
 def stringBits(str):
-  # CODE GOES HERE
-
+  sbits = str[::2]
+  print(sbits)
+stringBits('Hello')
+stringBits('Hi')
+stringBits('Heeololeo')
 
 #####################
 ## -- PROBLEM 3 -- ##
