@@ -121,13 +121,17 @@ no_teen_sum(2, 1, 14)
 #####################
 
 # Return the number of even integers in the given array.
-#
-# Examples:
-#
-# count_evens([2, 1, 2, 3, 4]) → 3
-# count_evens([2, 2, 0]) → 3
-# count_evens([1, 3, 5]) → 0
-
 
 def count_evens(nums):
-  # CODE GOES HERE
+  evens = []
+  for elem in nums:
+    if elem % 2 == 0:
+      evens.append(elem)
+  print('The number of even integers is {val} '.format(val = len(evens)))
+
+count_evens([2, 1, 2, 3, 4])
+count_evens([2, 2, 0])
+count_evens([1, 3, 5])
+
+""" evens = filter(lambada elem: elem%2==0,nums)
+print('The number of even integers is {val} '.format(val = len(evens))) """

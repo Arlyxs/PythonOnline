@@ -13,3 +13,21 @@ word_list = []
 for elem in s[::]:
     word_list.append(elem)
     print(word_list)
+
+    # Lambda Expressions
+#an anonymous function when full function is not required
+def timesTwo(num):
+    return num*2
+# Lambda expression
+lambda num: num*2
+
+my_list = [1,2,3,4,5,6,7,8,9,10]
+def evenBool(num):
+    return num%2 == 0
+evens = filter(evenBool,my_list)
+print(list(evens))
+
+# Now with Lambda!
+evens = filter(lambda num: num%2==0,my_list)
+print(len(list(evens)))
+#print(list(evens))
