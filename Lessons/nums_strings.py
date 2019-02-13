@@ -64,7 +64,7 @@ s + ' concatenate me'
 # does not change the value of s
 
 # ##use multiplication to create repitition
-letter = 'z'
+letter = 'zed'
 letter*10
 
 # ##Object methods Object.method(paramaters)
@@ -79,3 +79,13 @@ s.split('w')
 print('This is a string with an {p}'.format(p='insert'))
 print('One: {p}, Two: {p}, Three: {p}'.format(p='Hi!'))
 print('Object 1: {a}, Object 2: {b}, Object 3: {c}'.format(a=1,b='two',c=12.3))
+
+s1 = 'welcome'
+print('come' in s1)
+print('come' not in s1)
+
+s = "welcome to python"
+s.endswith("thon")
+#True
+s.startswith("good")
+#False

@@ -38,21 +38,19 @@ stringBits('Heeololeo')
 ## -- PROBLEM 3 -- ##
 #####################
 
-# Given two strings, return True if either of the strings appears at the very end
-# of the other string, ignoring upper/lower case differences (in other words, the
-# computation should not be "case sensitive").
-#
-# Note: s.lower() returns the lowercase version of a string.
-#
-# Examples:
-#
-# end_other('Hiabc', 'abc') → True
-# end_other('AbC', 'HiaBc') → True
-# end_other('abc', 'abXabc') → True
-
+# Given two strings, return True if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive").
 
 def end_other(a, b):
-  # CODE GOES HERE
+  if a.lower().endswith(b.lower()) or b.lower().endswith(a.lower()):
+    # a.lower() in b.lower() or b.lower() in a.lower():
+    result = True
+    print(result)
+  else:
+    result = False
+    print(result)
+end_other('Hiabc', 'abc')
+end_other('AbC', 'HiaBc')
+end_other('abc', 'abXabc')
 
 #####################
 ## -- PROBLEM 4 -- ##
@@ -61,13 +59,16 @@ def end_other(a, b):
 # Given a string, return a string where for every char in the original,
 # there are two chars.
 
-# doubleChar('The') → 'TThhee'
-# doubleChar('AAbb') → 'AAAAbbbb'
-# doubleChar('Hi-There') → 'HHii--TThheerree'
-
 def doubleChar(str):
-  # CODE GOES HERE
+  word_list = []
+  for elem in str[::]:
+    word_list.append(elem)
+    print(elem*2,end='')
+  #print(word_list*2)
 
+doubleChar('The')
+doubleChar('AAbb')
+doubleChar('Hi-There')
 
 #####################
 ## -- PROBLEM 5 -- ##
