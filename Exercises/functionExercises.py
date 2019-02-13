@@ -11,15 +11,16 @@
 
 
 def arrayCheck(nums):
-  lst = [1,2,3]
+  lst = [1, 2, 3]
   ltst = str(lst).strip("[]")
   numss = str(nums).strip("[]")
   print(ltst in numss)
 
-arrayCheck([1,3,5,7,8,9,11,14])
+
+arrayCheck([1, 3, 5, 7, 8, 9, 11, 14])
 arrayCheck([1, 1, 2, 4, 1])
 arrayCheck([1, 1, 2, 1, 2, 3])
-arrayCheck([1,2,3])
+arrayCheck([1, 2, 3])
 
 #####################
 ## -- PROBLEM 2 -- ##
@@ -27,9 +28,12 @@ arrayCheck([1,2,3])
 
 # Given a string, return a new string made of every other character starting  with the first,so "Hello" yields "Hlo".
 
+
 def stringBits(str):
   sbits = str[::2]
   print(sbits)
+
+
 stringBits('Hello')
 stringBits('Hi')
 stringBits('Heeololeo')
@@ -40,6 +44,7 @@ stringBits('Heeololeo')
 
 # Given two strings, return True if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive").
 
+
 def end_other(a, b):
   if a.lower().endswith(b.lower()) or b.lower().endswith(a.lower()):
     # a.lower() in b.lower() or b.lower() in a.lower():
@@ -48,6 +53,8 @@ def end_other(a, b):
   else:
     result = False
     print(result)
+
+
 end_other('Hiabc', 'abc')
 end_other('AbC', 'HiaBc')
 end_other('abc', 'abXabc')
@@ -59,12 +66,14 @@ end_other('abc', 'abXabc')
 # Given a string, return a string where for every char in the original,
 # there are two chars.
 
+
 def doubleChar(str):
   word_list = []
   for elem in str[::]:
     word_list.append(elem)
-    print(elem*2,end='')
+    print(elem*2, end='')
   #print(word_list*2)
+
 
 doubleChar('The')
 doubleChar('AAbb')
@@ -84,17 +93,28 @@ doubleChar('Hi-There')
 # In this way, you avoid repeating the teen code 3 times (i.e. "decomposition").
 # Define the helper below and at the same indent level as the main no_teen_sum().
 # Again, you will have two functions for this problem!
-#
-# Examples:
-#
-# no_teen_sum(1, 2, 3) → 6
-# no_teen_sum(2, 13, 1) → 3
-# no_teen_sum(2, 1, 14) → 3
 
 def no_teen_sum(a, b, c):
-  # CODE GOES HERE
+  sum = fix_teen(a) + fix_teen(b) + fix_teen(c)
+  print('The adjusted sum is {val} '.format(val=sum))
+
+
 def fix_teen(n):
-  # CODE GOES HERE
+  if n == 15 or n == 16:
+    n = n
+    #print(n)
+  elif n >= 13 and n <= 19:
+    n = 0
+    #print(n)
+  else:
+    n = n
+    #print(n)
+#fix_teen(18)
+  return n
+
+no_teen_sum(1, 2, 3)
+no_teen_sum(2, 13, 1)
+no_teen_sum(2, 1, 14)
 
 #####################
 ## -- PROBLEM 6 -- ##
@@ -107,6 +127,7 @@ def fix_teen(n):
 # count_evens([2, 1, 2, 3, 4]) → 3
 # count_evens([2, 2, 0]) → 3
 # count_evens([1, 3, 5]) → 0
+
 
 def count_evens(nums):
   # CODE GOES HERE
