@@ -3,10 +3,10 @@ import os
 cls = lambda: os.system('cls')
 cls()
 
-import os
+""" import os
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
-cls()
+cls() """
 
 msg = "Hello World"
 print(msg)
