@@ -1,3 +1,13 @@
+# now, to clear the screen
+import os
+cls = lambda: os.system('cls')
+cls()
+
+import os
+def cls():
+    os.system('cls' if os.name=='nt' else 'clear')
+cls()
+
 msg = "Hello World"
 print(msg)
 wrd = "My Lord is law"
@@ -13,6 +23,13 @@ word_list = []
 for elem in s[::]:
     word_list.append(elem)
     print(word_list)
+
+#split numbers that user input into a list [1,2,3]
+a=[]
+p=input()    
+for i in p:
+    a.append(int(i))
+print(a)
 
     # Lambda Expressions
 #an anonymous function when full function is not required

@@ -50,6 +50,17 @@ y = addEvenOnly(4, 4)
 print(x)
 print(y)
 
+a=int
+b=int
+c=int
+if a > b and c > a:
+  print("Both conditions are True")
+
+if a > b or a > c:
+  print("At least one of the conditions is True")
+
+
+
 # Lambda Expressions
 #an anonymous function when full function is not required
 def timesTwo(num):
