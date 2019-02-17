@@ -1,6 +1,14 @@
 {
-    "python.pythonPath": "C:\\Users\\Aleix\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe",
+    "python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Anaconda3_64\\python.exe",
     "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.cursorStyle": "block"
+    "editor.cursorStyle": "block",
+    "editor.fontSize": 16,
+    "files.autoSave": "afterDelay",
+    "powermode.enabled": true,
+    "powermode.shakeIntensity": 0,
+    "powermode.enableShake": false,
+    "powermode.enableStatusBarComboCounter": false,
+    "powermode.presets": "flames",
+    "powermode.explosionSize": 3
 }
