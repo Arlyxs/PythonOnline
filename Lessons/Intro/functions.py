@@ -50,13 +50,42 @@ y = addEvenOnly(4, 4)
 print(x)
 print(y)
 
+a=int
+b=int
+c=int
+if a > b and c > a:
+  print("Both conditions are True")
+
+if a > b or a > c:
+  print("At least one of the conditions is True")
+
+
+
 # Lambda Expressions
 #an anonymous function when full function is not required
+#Syntax
+"""lambda arguments : expression"""
+x = lambda a : a + 10
+print(x(5))
+
+z = lambda a, b, c : a + b + c
+print(z(5, 6, 2))
+
+
 def timesTwo(num):
     return num*2
 
 # Lambda expression
 lambda num: num*2
+
+def myfunc(n):
+  return lambda a : a * n
+
+mydoubler = myfunc(2)
+mytripler = myfunc(3)
+
+print(mydoubler(11)) 
+print(mytripler(11))
 
 my_list = [1,2,3,4,5,6,7,8,9,10]
 
