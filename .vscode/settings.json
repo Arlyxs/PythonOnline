@@ -10,5 +10,9 @@
     "powermode.enableShake": false,
     "powermode.enableStatusBarComboCounter": false,
     "powermode.presets": "flames",
-    "powermode.explosionSize": 3
+    "powermode.explosionSize": 3,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "code-runner.runInTerminal": true
 }

@@ -48,3 +48,11 @@ print(list(evens))
 evens = filter(lambda num: num%2==0,my_list)
 print(len(list(evens)))
 #print(list(evens))
+
+#uppercase label lets other developers know that it is a constant eg
+PI = -3.14
+print(round(PI)) #round to decimal
+
+#import math module to get access to mathematical functions
+import math
+math.floor(PI) #return highest round

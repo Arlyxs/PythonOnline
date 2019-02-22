@@ -3,36 +3,47 @@
 
 # def Statements ###
 
+
 def hello():
     print('hello')
-#call the function
+
+
+# call the function
 hello()
+
 
 def giveMeHello():
     return "hello"
 
+
 result = giveMeHello()
 print(result)
 # or print(giveMeHello())
+
 
 def evenCheck(num):
     print("I'm checking to see if {} is even!".format(num))
     # Experienced way: (Don't need an if statement)
     print(num % 2 == 0)
 
-#call the function
+
+# call the function
 evenCheck(45)
+
 
 def helloYou(name="Default Name"):
     return("Hello, "+name)
 
+
 # Try this with and without a name
 result = helloYou()
 print(result)
-#call the function
+# call the function
 helloYou('Lyxi')
 
 # function that will add two numbers together, only if they are even!
+
+
 def addEvenOnly(num1, num2):
     """
     input two nums
@@ -50,53 +61,66 @@ y = addEvenOnly(4, 4)
 print(x)
 print(y)
 
-a=int
-b=int
-c=int
+a = 10
+b = 30
+c = 5
 if a > b and c > a:
-  print("Both conditions are True")
+    print("Both conditions are True")
 
 if a > b or a > c:
-  print("At least one of the conditions is True")
+    print("At least one of the conditions is True")
 
+#chaining comparative operators
+age = 22
+# if age >= 18 and age <= 65
+if 18 <= age < 65:
+    print('Eligible')
 
 
 # Lambda Expressions
-#an anonymous function when full function is not required
-#Syntax
+# an anonymous function when full function is not required
+# Syntax
 """lambda arguments : expression"""
-x = lambda a : a + 10
-print(x(5))
 
-z = lambda a, b, c : a + b + c
+
+def gx(a): return a + 10
+print(gx(5))
+
+
+def z(a, b, c): return a + b + c
 print(z(5, 6, 2))
 
 
 def timesTwo(num):
     return num*2
 
+
 # Lambda expression
 lambda num: num*2
 
+
 def myfunc(n):
-  return lambda a : a * n
+    return lambda a: a * n
+
 
 mydoubler = myfunc(2)
 mytripler = myfunc(3)
 
-print(mydoubler(11)) 
+print(mydoubler(11))
 print(mytripler(11))
 
-my_list = [1,2,3,4,5,6,7,8,9,10]
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 
 def evenBool(num):
-    return num%2 == 0
+    return num % 2 == 0
 
-evens = filter(evenBool,my_list)
+
+evens = filter(evenBool, my_list)
 print(list(evens))
 
 # Now with Lambda!
-evens = filter(lambda num: num%2==0,my_list)
+evens = filter(lambda num: num % 2 == 0, my_list)
 print(list(evens))
 
 # Methods
@@ -109,13 +133,13 @@ tweet = 'Go Sports! #Sports'
 tweet.split('#')
 tweet.split('#')[1]
 
-d = {'k1':1,'k2':2}
+d = {'k1': 1, 'k2': 2}
 d.keys()
 d.items()
 
-lst = [1,2,3]
+lst = [1, 2, 3]
 x = lst.pop()
 
 # in Operator (not a method, just something useful)
-'x' in [1,2,3]
-'x' in ['x','y','z']
+'x' in [1, 2, 3]
+'x' in ['x', 'y', 'z']
