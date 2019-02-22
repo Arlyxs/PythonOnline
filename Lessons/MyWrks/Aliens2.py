@@ -30,3 +30,9 @@ for i in range(1, 21):
 # print range bckwards
 for i in range(20, 11, -1):
     print(i)
+
+# continue in for loop - goes on after condition met
+for i in range(5):
+    if i == 3:
+        continue
+    print('hello ', i)
