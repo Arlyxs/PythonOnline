@@ -3,6 +3,8 @@
 # import array (array.array)
 # import array as arr (arr.array)
 from array import *
+from numpy import *
+
 # i = 0
 vals = array('i', [5, 9, -8, 5, 4, 2])
 vals.reverse()
