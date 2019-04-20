@@ -1,1 +1,0 @@
-obj1.feature2()
