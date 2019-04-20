@@ -22,10 +22,15 @@ class Student:
         else:
             return False
 
-
+    '''
     # *4
     def __str__(self):
         return self.m1, self.m2
+    '''
+
+    # *5
+    def __str__(self):
+        return '{} {} '.format(self.m1, self.m2)
 
 
 s1 = Student(58, 69)
@@ -49,5 +54,7 @@ print(s1.__str__())
 
 *3 this is our comparator overload function 
 
-*4 overides the default string method and returns values that we define
+*4 overides the default string method and returns values that we define if we use the __str__() method in the print statement
+
+*5 uses a format to print the output of the object
 '''
