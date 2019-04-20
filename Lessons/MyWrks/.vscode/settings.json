@@ -1,3 +1,10 @@
 {
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe"
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "powermode.explosionSize": 4,
+    "powermode.enableShake": false,
+    "powermode.enabled": true,
+    "powermode.presets": "flames",
+    "python.formatting.provider": "black"
 }
