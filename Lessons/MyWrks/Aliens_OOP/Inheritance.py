@@ -3,11 +3,12 @@ class A:
     def feature1(self):
         print('feature 1 working')
 
-
     def feature2(self):
         print('feature 2 working')
 
 # B inherits class A features
+
+
 class B(A):
 
     def feature3(self):
@@ -17,16 +18,21 @@ class B(A):
         print('feature 4 works')
 
 # class without inheritance
+
+
 class C:
 
     def feature5(self):
-         print('feature 5 is working')
+        print('feature 5 is working')
 
 # inherits from B and C (multiple inheritance)
+
+
 class D(B, C):
 
     def feature6(self):
         print('feature 6 works also')
+
 
 class E(D):
 
@@ -47,7 +53,3 @@ b1.feature3()
 c1.feature5()
 d1.feature5()
 e1.feature6()
-
-
-
-
