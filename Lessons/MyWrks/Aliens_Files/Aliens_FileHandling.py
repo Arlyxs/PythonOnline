@@ -31,10 +31,10 @@ f2 = open('Aliens_Files\Abc.txt', 'a')
 f2.write(' THIS was appended')
 
 # copy all data from one file to another
-
+f3 = open('Aliens_Files\Cpy.txt', 'w')
 f = open('Aliens_Files\MyData.txt', 'r')
 
-f3 = open('Aliens_Files\Ent.txt', 'w')
+f3 = open('Aliens_Files\Cpy.txt', 'w')
 
 for data in f:
     f3.write(data)
