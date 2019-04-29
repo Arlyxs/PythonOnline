@@ -31,7 +31,6 @@ f2 = open('Aliens_Files\Abc.txt', 'a')
 f2.write(' THIS was appended')
 
 # copy all data from one file to another
-f3 = open('Aliens_Files\Cpy.txt', 'w')
 f = open('Aliens_Files\MyData.txt', 'r')
 
 f3 = open('Aliens_Files\Cpy.txt', 'w')
@@ -40,5 +39,10 @@ for data in f:
     f3.write(data)
 
 '''
-file must already exist to write data on first run.
+file empty after first run.  data shows in second run
+
+to copy image or other binary non-character file 
+use rb (read binary) and wb (write binary) as mode
+e.g.    f = open('IMG_90', 'rb')
+        f = open('MyPic', 'wb)
 '''
